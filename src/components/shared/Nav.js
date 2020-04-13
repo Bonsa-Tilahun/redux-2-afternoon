@@ -3,11 +3,12 @@ import "./../Budget/Budget.css"
 
 class Nav extends Component {
   render() {
-    let { firstName, lastName } = this.props;
+    let { firstName, lastName } = this.props.user;
     if (!firstName) firstName = 'MISSING'
     if (!lastName) lastName = 'MISSING'
 
     return (
+      // console.log
       <div className="top">
         <div className="title">budgetty</div>
         <div className="user-info">
